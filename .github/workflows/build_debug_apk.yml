@@ -45,7 +45,7 @@ jobs:
           path: build/outputs/apk/lawnWithQuickstep/debug/*.apk
   send-notifications:
     runs-on: ubuntu-latest
-    if: github.repository == 'LawnchairLauncher/lawnchair'
+    if: github.repository == 'marshmello61/lawnchair'
     needs: build-debug-apk
     steps:
       - name: Check out repository
